@@ -215,3 +215,7 @@ font_size = 18
 ```
 
 A snapshot of the appearance section is kept in `warp-appearance-settings.toml` in this repository for reference. Warp hot-reloads `settings.toml` when it changes.
+
+## Related: system library packages
+
+See [`system-packages-diagnostics.md`](system-packages-diagnostics.md) for installation of `libapr*`, `libasound2`, `libglib2.0`, and `libxcb-cursor` (Ubuntu 24.04 `t64` package names) and the diagnostic verification results.
