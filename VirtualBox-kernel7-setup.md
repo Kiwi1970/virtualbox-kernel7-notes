@@ -201,3 +201,17 @@ sudo dmesg | grep -i vbox | tail
 ## Cleanup performed
 
 Temporary test VMs (`vbox-dkms-test`, `vb-install-test`) were powered off and deleted. No guest VMs remain from this setup work. VirtualBox packages, DKMS modules, and the kernel 7.0 source patch remain installed.
+
+## Related: Warp terminal font size
+
+To increase Warp font size on Linux:
+
+- Shortcuts: `Ctrl+=` (increase), `Ctrl+-` (decrease), `Ctrl+0` (reset)
+- Settings file: `~/.config/warp-terminal/settings.toml`
+
+```toml
+[appearance]
+font_size = 18
+```
+
+A snapshot of the appearance section is kept in `warp-appearance-settings.toml` in this repository for reference. Warp hot-reloads `settings.toml` when it changes.
